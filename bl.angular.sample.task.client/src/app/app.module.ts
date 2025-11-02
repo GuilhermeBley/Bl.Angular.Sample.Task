@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { AppComponent } from './app.component';
 import { AlertComponent } from './_components';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { AlertComponent } from './_components';
   declarations: [
     AppComponent,
     AlertComponent,
+    ModalComponent,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
